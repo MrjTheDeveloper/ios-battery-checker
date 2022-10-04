@@ -1,7 +1,6 @@
 # iOS-Battery-Checker
 
-With this simple Code you can upload a log-aggregated ips file. When a file is uploaded, it reads the file as text, and then splits the text into lines. It then loops through the lines, and if a line contains a certain string like: com.apple.ioreport.BatteryCycleCount, com.apple.power.battery.MaximumFCC, com.apple.power.battery.NominalChargeCapacity, it'll get the values below that line, and displays these values in the top left hand corner.
-
+This code allows you to upload a log-aggregated ips file that contains information about battery usage. The code will read the file and then split it into lines. If a line contains certain strings of text like: com.apple.power.battery.MaximumFCC, com.apple.power.battery.NominalChargeCapacity, the code will display the values from that line in the top left hand corner.
 
 ## How to
 
@@ -19,4 +18,4 @@ With this simple Code you can upload a log-aggregated ips file. When a file is u
 ## Troubleshoot
 
 "I don't have a log-aggregated file on my iOS Device"
-> Make sure under Analytics & Improvements the "Share iPhone & Watch Analytics" is turned on. If it wasn't turned on, turn it on and wait a few hours or days until you find a file named "log-aggregated".
+> Make sure under Analytics & Improvements the "Share iPhone & Watch Analytics" is turned on. If it wasn't turned on, turn it on and wait a few hours or days until you find a file named "log-aggregated". After you have your file, it is recommended to turn off Analytics.
