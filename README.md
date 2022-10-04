@@ -9,7 +9,7 @@ This code allows you to upload a log-aggregated ips file that contains informati
 3. Analytics & Improvements
 4. Analytics Data
 5. Search: "log-aggregated"-YYYY-MM-DD-XXXXXX (Pick the latest)
-6. Click Top right "Share" > Save to Files e.g. "Downloads"
+6. Click Top right "Share" > "Save to Files" e.g. "Downloads"
 
 7. Go to https://ios-battery-checker.netlify.app/
 8. Click on Button then Choose your file
