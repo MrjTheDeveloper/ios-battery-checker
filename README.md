@@ -1,6 +1,6 @@
 # iOS-Battery-Checker
 
-This code allows you to upload a log-aggregated ips file that contains information about battery usage. The code will read the file and then split it into lines. If a line contains certain strings of text like: com.apple.power.battery.MaximumFCC, com.apple.power.battery.NominalChargeCapacity, the code will display the values from that line in the top left hand corner.
+This code allows you to upload a log-aggregated ips file that contains information about battery usage. The code will read the file and then split it into lines. If a line contains certain strings of text like: com.apple.ioreport.BatteryCycleCount, com.apple.power.battery.MaximumFCC, com.apple.power.battery.NominalChargeCapacity, the code will display the values from that line in the top left hand corner.
 
 ## How to
 
@@ -14,6 +14,11 @@ This code allows you to upload a log-aggregated ips file that contains informati
 7. Go to https://ios-battery-checker.netlify.app/
 8. Click on Button then Choose your file
 9. If done correctly you should see three Categories each displaying a value.
+
+## Explaination
+BatteryCycleCount = How many Times your Battery has been charged.
+MaximumFCC = Max. Designed Capacity of your Battery when it was new.
+NominalChargeCapacity = Capacity of your Battery now.
 
 ## Troubleshoot
 
