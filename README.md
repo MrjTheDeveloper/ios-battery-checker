@@ -18,9 +18,9 @@ This code allows you to upload a log-aggregated ips file that contains informati
 
 
 ## Explaination
-> BatteryCycleCount = How many Times your Battery has been charged.
-> MaximumFCC = Max. Designed Capacity of your Battery when it was new.
-> NominalChargeCapacity = Capacity of your Battery now.
+- BatteryCycleCount = How many Times your Battery has been charged.
+- MaximumFCC = Max. Designed Capacity of your Battery when it was new.
+- NominalChargeCapacity = Capacity of your Battery now.
 
 
 
