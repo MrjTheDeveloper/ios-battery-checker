@@ -12,11 +12,11 @@ With this simple Code you can upload a log-aggregated ips file. When a file is u
 5. Search: log-aggregated-YYYY-MM-DD-XXXXXX (Pick the latest)
 6. Click Top right "Share" > Save to Files e.g. "Downloads"
 
-7. Go to https://ios-battery-checker.netlify.app/
+7. Go to https://ios-battery-checker.netlify.app/ (or your own website)
 8. Click on Button then Choose your file
 9. If done correctly you should see three Categories each displaying a value.
 
 ## Troubleshoot:
 
 "I don't have a log-aggregated file on my iOS Device"
-> Make sure your under Analytics & Improvements "Share iPhone & Watch Analytics" is turned on. If it wasn't turned on, turn it on and wait a few hours or days until you find a file named "log-aggregated" 
+> Make sure the Analytics & Improvements "Share iPhone & Watch Analytics" is turned on. If it wasn't turned on, turn it on and wait a few hours or days until you find a file named "log-aggregated" 
