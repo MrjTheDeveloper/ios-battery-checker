@@ -27,4 +27,4 @@ This code allows you to upload a log-aggregated ips file that contains informati
 ## Troubleshoot
 
 "I don't have a log-aggregated file on my iOS Device"
-> Make sure under Analytics & Improvements the "Share iPhone & Watch Analytics" is turned on. If it wasn't turned on, turn it on and wait a few hours or days until you find a file named "log-aggregated". After you have your file, it is recommended to turn off Analytics.
+> Make sure that the Share iPhone & Watch Analytics option is enabled under Analytics & Enhancements. If it is not, enable the option and wait a few hours or days until you find a file named "log-aggregated". After that, it is recommended to disable Analytics.
