@@ -3,7 +3,7 @@
 With this simple Code you can upload a log-aggregated ips file. When a file is uploaded, it reads the file as text, and then splits the text into lines. It then loops through the lines, and if a line contains a certain string like: com.apple.ioreport.BatteryCycleCount, com.apple.power.battery.MaximumFCC, com.apple.power.battery.NominalChargeCapacity, it'll get the values below that line, and displays these values in the top left hand corner.
 
 
-## How to:
+## How to
 
 1. Open Settings
 2. Privacy & Security
@@ -16,7 +16,7 @@ With this simple Code you can upload a log-aggregated ips file. When a file is u
 8. Click on Button then Choose your file
 9. If done correctly you should see three Categories each displaying a value.
 
-## Troubleshoot:
+## Troubleshoot
 
 "I don't have a log-aggregated file on my iOS Device"
 > Make sure the Analytics & Improvements "Share iPhone & Watch Analytics" is turned on. If it wasn't turned on, turn it on and wait a few hours or days until you find a file named "log-aggregated" 
