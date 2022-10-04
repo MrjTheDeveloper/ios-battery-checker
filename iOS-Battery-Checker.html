@@ -1,0 +1,67 @@
+
+<html>
+    <head>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+document.title = 'iOS Battery Checker';
+
+var uploadButton = document.createElement('div');
+uploadButton.innerHTML = '<input type="file" id="file" name="file" />';
+uploadButton.style.position = 'absolute';
+uploadButton.style.top = '50%';
+uploadButton.style.left = '50%';
+uploadButton.style.transform = 'translate(-50%, -50%)';
+document.body.appendChild(uploadButton);
+
+var file = document.getElementById('file');
+file.accept = '.ips';
+
+file.onchange = function() {
+  var file = this.files[0];
+  var reader = new FileReader();
+  reader.onload = function(progressEvent) {
+    var lines = this.result.split('\n');
+    for (var line = 0; line < lines.length; line++) {
+      if (lines[line].includes('com.apple.ioreport.BatteryCycleCount')) {
+        var cycleCount = document.createElement('div');
+        cycleCount.innerHTML = 'Cycle Count: ' + lines[line + 1];
+        cycleCount.style.position = 'absolute';
+        cycleCount.style.top = '0';
+        cycleCount.style.left = '0';
+        document.body.appendChild(cycleCount);
+      }
+      if (lines[line].includes('com.apple.power.battery.MaximumFCC')) {
+        var maxFCC = document.createElement('div');
+        maxFCC.innerHTML = 'Maximum FCC: ' + lines[line + 1];
+        maxFCC.style.position = 'absolute';
+        maxFCC.style.top = '20px';
+        maxFCC.style.left = '0';
+        document.body.appendChild(maxFCC);
+      }
+      if (lines[line].includes('com.apple.power.battery.NominalChargeCapacity')) {
+        var nominalChargeCapacity = document.createElement('div');
+        nominalChargeCapacity.innerHTML = 'Nominal Charge Capacity: ' + lines[line + 1];
+        nominalChargeCapacity.style.position = 'absolute';
+        nominalChargeCapacity.style.top = '40px';
+        nominalChargeCapacity.style.left = '0';
+        document.body.appendChild(nominalChargeCapacity);
+      }
+    }
+  };
+  reader.readAsText(file);
+};
+
+var style = document.createElement('style');
+style.innerHTML = '* { font-family: Arial; }';
+document.head.appendChild(style);
+
+var viewport = document.createElement('meta');
+viewport.name = 'viewport';
+viewport.content = 'width=device-width, initial-scale=1.0';
+document.head.appendChild(viewport);
+});
+        </script>
+    </head>
+    <body style="margin: 0;">
+    </body>
+</html>
